@@ -1,26 +1,27 @@
 <template name="recipes">
-    <div class="container" style="margin-top:10px;">
-        <div class="row form-group">
+    {{#each recipes}}
 
-            <div class="col-xs-8 col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-image">
-                        <img src="//c2.staticflickr.com/8/7009/6816478369_5a29c021bc_b.jpg" class="panel-image-preview" />
-                    </div>
-                    <div class="panel-body">
-                        <h4>Fish Masala</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing luctus ornare. Suspendisse blandit quam elit, eu imperdiet neque semper et.</p>
-                    </div>
-                    <div class="panel-footer text-center">
-                        <a href="#"><span class="glyphicon glyphicon-open-file"></span></a>
-                        <a href="#"><span class="glyphicon glyphicon-time" style="vertical-align:middle"></span><small> 20 min</small></a>
-
-                        <a href="#"><span class="glyphicon glyphicon-heart " style="vertical-align:middle"></span><small>15 </small></a>
-      <a href="#"><span class="glyphicon glyphicon-share"></span></a>
+        <div class="container" style="margin-top:10px;">
+            <div class="row form-group">
+                <div class=" col-md-4">
+                    <div class="panel panel-default">
+                        <div class="panel-image">
+                            <img src="{{image}}" class="panel-image-preview" />
+                        </div>
+                        <div class="panel-body">
+                            <h4>{{name}}</h4>
+                            <p>{{description}}</p>
+                        </div>
+                        <div class="panel-footer text-center">
+                            <a href="#"><span class="glyphicon glyphicon-open-file"></span></a>
+                            <a href="#"><span class="glyphicon glyphicon-time" style="vertical-align:middle"></span><small> {{time}}</small></a>
+                            <a href="#"><span class="glyphicon glyphicon-heart " style="vertical-align:middle"></span><small>15 </small></a>
+                            <a href="#"><span class="glyphicon glyphicon-share"></span></a>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+            </div>
         </div>
-    </div>
+    {{/each}}
 </template>

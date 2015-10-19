@@ -1,3 +1,60 @@
 <template name="add_recipes">
-    add recipes
+    <form  class="add_recipe">
+        <div class="form-group">
+            <label class="control-label" for="name" >Recipe Name</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="Please Enter the Recipe name">
+
+        </div>
+
+
+
+
+        <div class="form-inline mb">
+            <div class="form-group">
+
+                <label for="ingredient">Ingredient Name</label>
+                <input type="text" class="form-control" name="ingredient" id="ingredient" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" class="form-control" name="amount" id="amount" placeholder="Amount ">
+            </div>
+            <button  class="btn btn-default">Add More</button>
+
+        </div>
+
+
+
+
+
+
+
+
+
+        <div class="form-group">
+            <label class="control-label" for="des" >How to prepare</label>
+
+            <textarea class="form-control" type="text" name="description" rows="3" id="des">
+            </textarea>
+
+        </div>
+        <div class="form-group">
+            <label class="control-label" for="time" >Time to prepare</label>
+
+            <input class="form-control" type="number" name="time"  id="time" placeholder="Time required to make the recipe. (In Minutes)">
+
+        </div>
+        <div class="form-group">
+            <label for="prodImg">Please Select the Image of your Recipe</label>
+            <input type="file" id="recipeImage" name="recipeImage">
+        </div>
+
+
+
+        <div>
+            <button type="submit" name="submit" class="btn btn-success "> Add Recipe</button>
+            <a href="/" class="btn btn-default">Close</a>
+        </div>
+
+    </form>
 </template>
