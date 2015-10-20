@@ -9,3 +9,16 @@
 .mt{
     margin-top: 25px;
 }
+.footer {
+    width:100%;
+    height:50px;
+    background-color:  #f5f5f5;
+    line-height: 30px;
+    font-weight: 300;
+
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+    left: 0pt;
+}
