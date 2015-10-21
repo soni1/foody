@@ -49,8 +49,4 @@ Template.add_recipes.events({
         Router.go('/');
         event.preventDefault();
     }
-
-
-
-
 })
