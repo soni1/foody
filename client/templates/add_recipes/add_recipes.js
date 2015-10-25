@@ -1,4 +1,11 @@
 
+
+
+
+
+
+
+/**
 Template.add_recipes.events({
 
     'submit .add_recipe':function(event){
@@ -50,3 +57,4 @@ Template.add_recipes.events({
         event.preventDefault();
     }
 })
+ **/

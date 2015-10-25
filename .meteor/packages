@@ -24,3 +24,7 @@ mrt:flash-messages
 cfs:standard-packages
 cfs:gridfs
 email
+aldeed:collection2
+aldeed:autoform
+cfs:autoform
+babrahams:constellation
