@@ -3,15 +3,10 @@
         <fieldset>
             <legend>Add a Recipe</legend>
             {{> afQuickField name='name'}}
-            {{> afQuickField name='Ingredients'}}
-            {{> afQuickField name='Ingredients.name'}}
-            {{> afQuickField name='Ingredients.amount'}}
-
-
-
+            {{> afQuickField name='ingredients'}}
             {{> afQuickField name='description' rows=6}}
             {{> afQuickField name='time'}}
-            {{> afQuickField name='image'}}
+            {{> afQuickField name="image" }}
 
         </fieldset>
         <button type="submit" class="btn btn-primary">Add Recipe</button>
