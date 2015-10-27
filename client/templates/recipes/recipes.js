@@ -4,7 +4,7 @@ Template.recipes.helpers({
 
     },
     'images': function () {
-        return RecipesImages.find() ;
+        return RecipesImages.findOne({_id:id}) ;
     }
 
 })

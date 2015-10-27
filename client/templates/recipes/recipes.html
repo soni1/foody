@@ -1,14 +1,18 @@
 <template name="recipes">
     {{#each showRecipes}}
 
-                <div class=" col-md-4">
-                    <div class="panel panel-default mb " >
-                        <div class="panel-image">
-                            <img src="{{image }}" class="panel-image-preview" />
-                        </div>
-                        <div class="panel-body">
-                            <h4>{{name}}</h4>
-                            <p>{{description}}</p>
+        <div class=" col-md-4">
+            <div class="panel panel-default mb " >
+                <div class="panel-image">
+
+                    {{#with FS.GetFile "recipesImages" images._id}}
+                        <img src="{{url}}" class="panel-image-preview" />
+                    {{/with}}
+
+                </div>
+                <div class="panel-body">
+                    <h4>{{name}}</h4>
+                    <p>{{description}}</p>
                         </div>
                         <div class="panel-footer text-center" >
                             <a href="{{pathFor 'show_recipe'}}"><span class="glyphicon glyphicon-open-file"></span></a>
