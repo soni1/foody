@@ -5,9 +5,7 @@
             <div class="panel panel-default mb " >
                 <div class="panel-image">
 
-                    {{#with FS.GetFile "recipesImages" images._id}}
-                        <img src="{{url}}" class="panel-image-preview" />
-                    {{/with}}
+                        <img src="{{images.url storage='recipesImages'}}" class="panel-image-preview" />
 
                 </div>
                 <div class="panel-body">

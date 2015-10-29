@@ -3,6 +3,6 @@ Template.recipes.helpers({
         return Recipes.find();
     },
     'images': function () {
-        return RecipesImages.findOne() ;
+        return RecipesImages.findOne({_id:this.image}) ;
     }
 })
