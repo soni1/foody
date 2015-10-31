@@ -13,9 +13,9 @@
                 <ul class="list-group">
 
                     <h3> Ingredients</h3>
-                    {{#with ingredients}}
-                        <li class="list-group-item">{{name}} - {{amount}}</li>
-                    {{/with}}
+                    {{#each ingredients}}
+                        <li class="list-group-item">{{name}} -  {{amount}}</li>
+                    {{/each}}
                 </ul>
 
             </div>
