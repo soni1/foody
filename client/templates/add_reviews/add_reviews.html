@@ -1,3 +1,10 @@
-<template name="add_reviews">
-    add reviews
-</template>
+<template name="add_review">
+        {{#autoForm collection="Recipes" id="add_review" type="update"}}
+            <fieldset>
+                <legend>Add a Review</legend>
+                {{> afQuickField name='rating'}}
+                {{> afQuickField name='review'  rows=6}}
+            </fieldset>
+            <button type="submit" class="btn btn-primary">Add Review</button>
+        {{/autoForm}}
+    </template>
