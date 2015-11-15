@@ -1,0 +1,42 @@
+<template name="reviews">
+    <div class="container">
+        <h3>{{name}}</h3>
+        <div class="row recipe-row">
+            <div class="col-md-2">
+                {{#with FS.GetFile "recipesImages" image}}
+
+                    <img class="full" src="{{url}}">
+                {{/with}}
+
+            </div>
+            <div class="col-md-10">
+                <h4>{{name}}</h4>
+                <p>Average Rating: <img class="stars" src="/img/star{{averageRating}}.png"> ({{countReviews}})</p>
+                <p>{{shortText description 150}}</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="text-right">
+                    <a href="/add_review/{{_id}}" class="btn btn-success">Leave a Review</a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <h4>Reviews & Ratings</h4>
+        {{#each showReviews}}
+            <div class="row">
+                <div class="col-md-10">
+                    <img class="stars" src="/img/star{{rating}}.png"> {{review}}
+                </div>
+                <div class="col-md-2">
+                    {{review_date}}
+                </div>
+            </div>
+            <br>
+        {{/each}}
+
+    </div>
+
+</template>
