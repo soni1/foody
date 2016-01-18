@@ -31,4 +31,5 @@ babrahams:constellation
 liberation:shareit
 cfs:ui
 accounts-password
-ian:accounts-ui-bootstrap-3
+useraccounts:bootstrap
+useraccounts:iron-routing

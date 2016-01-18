@@ -27,17 +27,14 @@
                 {{ description}}
             </div>
         </div>
-
-        <a href="{{pathFor 'reviews'}}" class="btn btn-primary mb">Read review</a>
-        {{#if currentUser}}
-        <a href="{{pathFor 'add_review'}}" class="btn btn-primary mb">Add review</a>
-        {{/if}}
-
-
-
+        <br>
+        <div class="row">
+            <a href="{{pathFor 'reviews'}}" class="btn btn-primary ">Read review</a>
+            {{#if currentUser}}
+                <a href="{{pathFor 'add_review'}}" class="btn btn-primary">Add review</a>
+            {{else}}
+                <a href="/sign-in" class="btn btn-success">Log In to add a Review</a>
+            {{/if}}
+        </div>
     </div>
-
-
-
-
 </template>

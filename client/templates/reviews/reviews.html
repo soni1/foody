@@ -21,6 +21,8 @@
                 <div class="text-right">
                     {{#if currentUser}}
                         <a href="/add_review/{{_id}}" class="btn btn-success">Leave a Review</a>
+                        {{else}}
+                        <a href="/sign-in" class="btn btn-success">Log In to add a Review</a>
 
                     {{/if}}
                 </div>

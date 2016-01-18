@@ -17,12 +17,13 @@
                     {{#if currentUser}}
                     <li><a href="{{pathFor 'add_recipes'}}">Add Recipe</a></li>
                     {{/if}}
-                    <li><a href="{{pathFor 'contact_us'}}">Contact us</a></li>
+                    <li>   {{> atNavButton}}</li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    {{> loginButtons}}
-
-                </ul>
+                {{#if currentUser}}
+                    <span class="login_user pull-right">
+                    {{currentUser.username}} is Logged in
+                    </span>
+                {{/if}}
             </div><!--/.nav-collapse -->
         </div>
     </nav>

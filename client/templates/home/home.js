@@ -4,7 +4,9 @@ Template.home.events({
             Router.go('/add_recipes')
         }
         else
-        FlashMessages.sendError('Please first register to add recipe and review',{ autoHide: true, hideDelay: 3000 });
+        {
+            Router.go('/sign-in')
+        }
 
     }
 });

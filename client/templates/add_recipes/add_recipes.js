@@ -1,4 +1,11 @@
-
+Template.add_recipes.helpers({
+    currentUserId: function () {
+        return Meteor.userId();
+    },
+    currentUserName: function () {
+        return Meteor.user().username;
+    }
+});
 
 
 

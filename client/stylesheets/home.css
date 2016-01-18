@@ -11,10 +11,19 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height:610px;
+    height: 700px;
 }
 .heading {
     color: #f8fffd;
     font-size: 90px;
 
+}
+.home{
+    padding: 0;
+    margin-top: -40px;
+}
+.login_user{
+    color: white;
+    line-height: 40px;
+    font-size: 1.1em;
 }
