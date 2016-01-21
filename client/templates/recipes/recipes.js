@@ -10,7 +10,9 @@ Template.recipes.helpers({
 Template.recipes.events({
     "click [data-action='addLikes']":function(event){
         event.preventDefault();
-        currentRecipe = Recipes.findOne(this._id);
-          Recipes.update(this._id,{$addToset:{voters:Meteor.userId()}}, {$inc:{likes: 1}  });
+        if (_.contains(Recipes.voters,Meteor.userId() ))
+            FlashMessages.sendError("You already liked this recipe", { hideDelay: 1000 });
+              Recipes.update(this._id,
+                  {$addToSet:{voters:Meteor.userId()}, $inc:{likes: 1}  });
     }
-})
+});
