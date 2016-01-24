@@ -9,7 +9,7 @@ Template.add_review.events({
                 recipeId:Router.current().data()._id
             });
             FlashMessages.sendSuccess('Review Added',{ autoHide: true, hideDelay: 3000 });
-            Router.go('/');
+            Router.go('reviews',{_id:Router.current().data()._id});
         }
         else{
             FlashMessages.sendError('Review field is empty',{ autoHide: true, hideDelay: 3000 });

@@ -14,7 +14,8 @@
 
                     <h3> Ingredients</h3>
                     {{#each ingredients}}
-                        <li class="list-group-item">{{name}} -  {{amount}}</li>
+                        <li class="list-group-item"><span class="glyphicon glyphicon-circle-arrow-right
+"></span> {{name}} .......................................  {{amount}}</li>
                     {{/each}}
                 </ul>
 
@@ -23,7 +24,8 @@
         </div>
         <div class="row">
             <div class="col-md-8">
-                <h4>{{name}}</h4>
+                <h3>{{name}} <span class="author">(Recipe added by <strong>{{ownerName}}</strong>)</span></h3>
+                <h3>Preparation</h3>
                 {{ description}}
             </div>
         </div>
