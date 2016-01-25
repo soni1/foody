@@ -8,7 +8,7 @@ Template.add_review.events({
                 review:review,
                 recipeId:Router.current().data()._id
             });
-            FlashMessages.sendSuccess('Review Added',{ autoHide: true, hideDelay: 3000 });
+            FlashMessages.sendSuccess('Review Added',{ autoHide: true, hideDelay: 2000 });
             Router.go('reviews',{_id:Router.current().data()._id});
         }
         else{
