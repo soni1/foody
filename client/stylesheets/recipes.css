@@ -6,7 +6,13 @@
     height: 300px;
     border-radius: 4px 4px 0px 0px;
 }
+.panel-body{
+    height: 100px;
+}
+.panel-body h4{
+    color: black;
 
+}
 .panel-body {
     overflow: hidden;
 }
@@ -17,5 +23,15 @@
     text-decoration: none;
 }
 .author{
-    font-size: .5em;
+    font-size: .6em;
+    color: #f93f23;
+    text-transform: uppercase;
+    letter-spacing: normal;
+}
+
+a.deco-none a:link, a:visited, a:active, a:hover {
+text-decoration: none;
+}
+.recipe-name{
+    color: #a33447;
 }
