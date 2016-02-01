@@ -6,7 +6,7 @@
     height: 300px;
     border-radius: 4px 4px 0px 0px;
 }
-.panel-body{
+.pb{
     height: 100px;
 }
 .panel-body h4{
@@ -34,4 +34,7 @@ text-decoration: none;
 }
 .recipe-name{
     color: #a33447;
+}
+.preparation{
+    color: #946b43;
 }

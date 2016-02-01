@@ -39,3 +39,7 @@ html,body{
 .full{
     width: 100%;
 }
+.no-reviews{
+    color: #90998c;
+    font-weight: 900;
+}

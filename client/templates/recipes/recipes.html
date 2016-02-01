@@ -8,14 +8,14 @@
                             <div class="panel-image">
                                 <img src="{{images.url storage='recipesImages'}}" class="panel-image-preview" />
                             </div>
-                            <div class="panel-body">
+                            <div class="panel-body pb">
                                 <h4>{{name}}</h4>
                                 {{shortText description 100}}
                             </div>
                             <div class="  panel-footer text-center" >
                                 <a href="{{pathFor 'show_recipe'}}" data-toggle="tooltip" title="View Recipe"><span class="glyphicon glyphicon-open-file"></span></a>
-                                <a style="text-decoration:none;" href="#" data-toggle="tooltip" title="Cooking Time"><span class="glyphicon glyphicon-time" style="vertical-align:middle"></span><small> {{time}} Minutes</small></a>
-                                <a style="text-decoration:none;" href="#" data-toggle="tooltip" title="Like it" data-action="addLikes"><span class=" glyphicon glyphicon-heart" style="vertical-align:middle"></span>&nbsp; <small>{{likes}} Likes </small></a>
+                                <a href="#" data-toggle="tooltip" title="Cooking Time"><span class="glyphicon glyphicon-time" style="vertical-align:middle"></span><small> {{time}} Minutes</small></a>
+                                <a href="#" data-toggle="tooltip" title="Like it" data-action="addLikes"><span class=" glyphicon glyphicon-heart" style="vertical-align:middle"></span>&nbsp; <small>{{likes}} Likes </small></a>
                                 <a href="{{pathFor 'reviews'}}" data-toggle="tooltip" title="Reviews"><span class="glyphicon glyphicon-comment"></span></a>
                             </div>
                         </div>
