@@ -15,18 +15,43 @@
 }
 .heading {
     color: #f8fffd;
-    font-size: 90px;
+    font-size: 70px;
 
+
+}
+.main{
+    position: absolute;
+    margin-top: 280px;
+    text-align: center;
+    margin-left: 300px;
 }
 .home{
     padding: 0;
-    margin-top: -40px;
+    margin-top: -20px;
 }
 .login_user{
     color: white;
     line-height: 40px;
     font-size: 1.1em;
 }
+.title{
+    color: #fff;
+    font-size: 26px;
+    text-shadow: #000 0 0 7px,rgba(0,0,0,0.9) 0 0 20px;
+}
+.shareRecipe{
+    margin-right: 2em;
 
-
+}
+.shareRecipe:hover{
+    background-color: transparent;
+    border-color: #2e6da4;
+}
+.checkRecipe{
+    background-color: transparent;
+    border: 2px solid #2e6da4 ;
+}
+.checkRecipe:hover{
+    background-color: #337ab7;
+}
 /*-----------------------------------------------*/
