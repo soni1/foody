@@ -3,15 +3,16 @@
         {{#autoForm collection="Recipes" id="insertRecipes" type="insert"}}
             <fieldset>
                 <legend>Add a Recipe</legend>
-                {{> afQuickField name='name'}}
-                {{> afQuickField name='ingredients'}}
-                {{> afQuickField name='description' rows=6}}
-                {{> afQuickField name='time'}}
+                {{> afQuickField name='name' placeholder='Recipe name' }}
+                {{> afQuickField name='ingredients' }}
+                {{> afQuickField name='description' placeholder='How to prepare recipe.' rows=6}}
+                {{> afQuickField name='time'   placeholder='Time Required for cooking. (Only in numbers)'}}
                 {{> afQuickField name="image" }}
                 {{> afQuickField name="likes" value="0" type="hidden" }}
                 {{> afQuickField name='ownerId' type="hidden" value=currentUserId}}
                 {{> afQuickField name='ownerName' type="hidden" value=currentUserName}}
                 {{> afQuickField name='voters' type="hidden" value=""}}
+
             </fieldset>
             <button type="submit" class="btn btn-primary">Add Recipe</button>
         {{/autoForm}}

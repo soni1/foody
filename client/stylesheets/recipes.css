@@ -23,8 +23,8 @@
     text-decoration: none;
 }
 .author{
-    font-size: .6em;
-    color: #f93f23;
+    font-size: .5em;
+    color: #f99d64;
     text-transform: uppercase;
     letter-spacing: normal;
 }
@@ -33,7 +33,7 @@ a.deco-none a:link, a:visited, a:active, a:hover {
 text-decoration: none;
 }
 .recipe-name{
-    color: #a33447;
+    color: #946b43;
 }
 .preparation{
     color: #946b43;

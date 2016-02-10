@@ -20,6 +20,7 @@ upvote = function(currentRecipe){
     var user = Meteor.user();
     if(!user){
         FlashMessages.sendError("You need to login to like this recipe", {hideDelay: 1000});
+        return false;
 
     }
     if (currentRecipe) {
