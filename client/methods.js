@@ -1,9 +1,10 @@
-addReview = function(rating,review,recipeId){
+addReview = function(rating,review,recipeId,author){
     if(review!=""){
         Reviews.insert({
             rating:rating,
             review:review,
-            recipeId:recipeId
+            recipeId:recipeId,
+            author:author
         });
         Router.go('reviews',{_id:recipeId});
 

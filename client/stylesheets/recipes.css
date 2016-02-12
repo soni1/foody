@@ -19,8 +19,9 @@
 
 
 .panel-image ~ .panel-footer a {
-    margin-right: 20px;
     text-decoration: none;
+    padding: 11px;
+    border: 1px solid transparent;
 }
 .author{
     font-size: .5em;
@@ -35,9 +36,21 @@ text-decoration: none;
 .recipe-name{
     color: #946b43;
 }
+.recipe-footer a:hover{
+    color: #110c7d;
+    background-color: #9d9d9d;
+    border: 1px solid #4e4d4d;
+
+}
 .preparation{
     color: #946b43;
 }
 .required{
     color: #e65349;
+}
+.review-author{
+    color: #110c7d;
+}
+.margin-right{
+    margin-right: 15px;
 }

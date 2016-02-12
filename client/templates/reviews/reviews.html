@@ -1,42 +1,43 @@
 <template name="reviews">
     <div class="container">
-        <h3>{{name}}</h3>
         <div class="row recipe-row">
             <div class="col-md-2">
                 {{#with FS.GetFile "recipesImages" image}}
 
-                    <img class="full" src="{{url}}">
+                    <img class="img-responsive margin-top" src="{{url}}">
                 {{/with}}
 
             </div>
-            <div class="col-md-10">
-                <h4>{{name}}</h4>
-                <p>Average Rating: <img class="stars" src="/img/star{{averageRating}}.png"> ({{countReviews}} reviews)</p>
+            <div class="col-md-10 mb">
+                <h3>{{name}}</h3>
+                <p><span class="average-rating">Average Rating:</span> <img class="stars" src="/img/star{{averageRating}}.png"> ({{countReviews}} reviews)</p>
 
-                <p>{{ description }}</p>
+                {{shortText description 100}}
+
             </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="text-right">
-                    {{#if currentUser}}
-                        <a href="/add_review/{{_id}}" class="btn btn-success">Leave a Review</a>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="text-right">
+                        {{#if currentUser}}
+                            <a href="/add_review/{{_id}}" class="btn btn-success">Leave a Review</a>
                         {{else}}
-                        <a href="/sign-in" class="btn btn-success">Log In to add a Review</a>
+                            <a href="/sign-in" class="btn btn-success">Log In to add a Review</a>
 
-                    {{/if}}
+                        {{/if}}
+                    </div>
                 </div>
             </div>
+
         </div>
-        <hr>
+
         <h4>Reviews & Ratings</h4>
 
         {{#each showReviews}}
             {{#if countReviews }}
                 <div class="row">
-                    <div class="col-md-10">
-                        <img class="stars" src="/img/star{{rating}}.png"> {{review}}
+                    <div class="col-md-10 review">
+                        <p><img class="stars" src="/img/star{{rating}}.png">  <small class="review-author"> By {{author}} </small></p>
+                        {{review}}
                     </div>
 
                 </div>

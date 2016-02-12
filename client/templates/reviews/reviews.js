@@ -6,6 +6,7 @@ Template.reviews.helpers({
     countReviews: function(){
         return Reviews.find({recipeId: Router.current().data()._id}).count();
     },
+
     averageRating: function() {
         var reviews = Reviews.find({recipeId: Router.current().data()._id}).fetch();
         if(reviews.length===0)

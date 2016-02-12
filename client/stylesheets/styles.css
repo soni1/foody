@@ -46,3 +46,17 @@ html,body{
     font-weight: 900;
 
 }
+.stars{
+    width: 110px;
+}
+.review{
+    border-bottom: 1px solid transparent;
+    padding-bottom: 25px;
+}
+.margin-top{
+    margin-top: 15px;
+
+}
+.average-rating{
+    font-weight: 500;
+}

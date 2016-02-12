@@ -3,6 +3,10 @@ html,body{
     padding: 0;
     height: 100%;
     width: 100%;
+    overflow-x: hidden;
+}
+.navbar{
+    width: auto;
 }
 
 
@@ -15,7 +19,7 @@ html,body{
     background-position: center center;
     overflow: hidden;
 
-    height: 720px;
+    height: 48em;
     width: 100%;
 }
 
@@ -28,9 +32,9 @@ html,body{
 }
 .main{
     position: relative;
-    margin-top: 280px;
+    margin-top: 260px;
     text-align: center;
-    margin-left: 280px;
+    margin-left: 150px;
 }
 .home{
     padding: 0;

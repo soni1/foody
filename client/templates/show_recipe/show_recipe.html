@@ -3,19 +3,19 @@
     <div class="container">
         <div class="row">
 
-            <div class="col-md-8">
+            <div class="col-md-6">
 
                 {{#with FS.GetFile "recipesImages" image}}
                     <img class="img-responsive mt" src="{{url}}"/>
                 {{/with}}
             </div>
-            <div class="col-md-4" >
+            <div class="col-md-4 col-md-offset-2" >
                 <ul class="list-group">
 
                     <h3> Ingredients</h3>
                     {{#each ingredients}}
                         <li class="list-group-item"><span class="glyphicon glyphicon-circle-arrow-right
-"></span> {{name}} .......................................  {{amount}}</li>
+" style="vertical-align:middle"></span> {{name}} .......................................  {{amount}}</li>
                     {{/each}}
                 </ul>
 
@@ -33,14 +33,18 @@
                 {{ description}}
             </div>
         </div>
-        <br>
+        <hr>
         <div class="row">
-            <a href="{{pathFor 'reviews'}}" class="btn btn-primary ">Read review</a>
-            {{#if currentUser}}
-                <a href="{{pathFor 'add_review'}}" class="btn btn-primary">Add review</a>
-            {{else}}
-                <a href="/sign-in" class="btn btn-success">Log In to add a Review</a>
-            {{/if}}
+            <div class="col-md-12 mb">
+                <a href="{{pathFor 'reviews'}}" class="btn btn-primary margin-right ">Read review</a>
+                {{#if currentUser}}
+                    <a href="{{pathFor 'add_review'}}" class="btn btn-primary">Add review</a>
+                {{else}}
+                    <a href="/sign-in" class="btn btn-success">Log In to add a Review</a>
+                {{/if}}
+
+            </div>
+
         </div>
     </div>
 </template>
