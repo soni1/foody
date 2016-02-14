@@ -5,11 +5,6 @@ html,body{
     width: 100%;
     overflow-x: hidden;
 }
-.navbar{
-    width: auto;
-}
-
-
 
 
 .backgroundImg{
@@ -65,4 +60,5 @@ html,body{
 .checkRecipe:hover{
     background-color: #337ab7;
 }
+
 /*-----------------------------------------------*/

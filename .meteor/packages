@@ -31,3 +31,4 @@ cfs:ui
 accounts-password
 useraccounts:bootstrap
 useraccounts:iron-routing
+sacha:spin
